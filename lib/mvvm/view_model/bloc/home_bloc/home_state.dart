@@ -13,7 +13,7 @@ class HomeState {
   const HomeState({
     this.status = Status.initial,
     this.message = "",
-    this.products = const [],
+    this.products = const[],
     this.enabled = true,
     this.offset = 0,
     this.limit = 10,

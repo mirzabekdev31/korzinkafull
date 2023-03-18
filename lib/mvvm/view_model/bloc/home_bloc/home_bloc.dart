@@ -5,7 +5,6 @@ import 'package:meta/meta.dart';
 import '../../../model/core/api/korzinka_api.dart';
 
 part 'home_event.dart';
-
 part 'home_state.dart';
 
 class HomeBloc extends Bloc<HomeEvent, HomeState> {
@@ -13,6 +12,8 @@ class HomeBloc extends Bloc<HomeEvent, HomeState> {
 
   HomeBloc(this._api) : super(const HomeState()) {
     on<HomeInitEvent>((event, emit) async {
+      final model=_api.getKorzinka();
+      print(model);
       emit(state.copyWith(status: Status.loading, offset: 0, hasData: true));
       try {
         emit(state.copyWith(

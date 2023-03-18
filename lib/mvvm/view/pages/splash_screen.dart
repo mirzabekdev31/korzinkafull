@@ -1,8 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:korzinkafull/mvvm/view/pages/pin_code_screen/pin_code_screen.dart';
-import 'package:korzinkafull/mvvm/view_model/bloc/splash_bloc/splash_bloc.dart';
 
 class SplashScreen extends StatefulWidget {
   static const route = "splash";
